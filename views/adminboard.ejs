@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title%>></title>
+</head>
+
+<body>
+ <h1><%= title%></h1>
+<table border="1">
+    <tr>
+        <td>번호</td>
+        <td>작성자</td>
+        <td>제목</td>
+        <td>날짜</td>
+    </tr>
+
+    <%
+    for(var i=0; i<rows.length; i++)
+    {
+        var data = rows[i];
+    %>
+
+    <tr>
+        <td><%=data%></td>
+        <td><%=data%></td>
+        <td><%=data%></td>
+        <td><%=data%></td>
+        <td><%=data%></td>
+    </tr>
+    
+    <%}%>
+</table>
+</body>
+</html>
