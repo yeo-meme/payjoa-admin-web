@@ -21,6 +21,10 @@ const db = new Firestore({
 router.get('/signup', function(req, res, next) {
   res.render('signup', { page: 'signup' });
 });
+router.get('/payment', function(req, res) {
+    res.render('payment', { title: 'Hello, World!' })
+});
+
 
 
 const aTuringRef = db.collection('users').doc('aturing');
@@ -60,7 +64,9 @@ function duplicate(req, res, uid, upwd) {
             if (snapshot.size > 0) {
                 snapshot.forEach((doc) => {
                     console.log(doc.id, '=> mamamoo~~ ', doc.data());
-                    res.redirect("/admin");
+                    // res.redirect("/adminboard");
+                    var user = [{name: '진우', age: 30}, {name: '미미', age:22}];
+                    res.render('adminboard', {title: '미미 안뇽', user: user});
                 });
             } else {
                 // res.render('index',{title:'로그인 조회', pass: false});

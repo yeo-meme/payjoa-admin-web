@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1b611f4-a1aa-4a69-a38b-e25cdef27371" name="Default Changelist" comment="" />
+    <list default="true" id="d1b611f4-a1aa-4a69-a38b-e25cdef27371" name="Default Changelist" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/adminboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/adminboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/paymentresult.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/paymentresult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/testboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/testboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/adminboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/adminboard.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/paymentresult.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/paymentresult.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/testboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/testboard.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lgKAk2t9zfGbv05BUC8XyKO6L4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../replstar_nodejs_admin-master" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -43,29 +65,48 @@
       <workItem from="1608094939213" duration="1919000" />
       <workItem from="1608165558987" duration="1832000" />
       <workItem from="1608169636265" duration="13245000" />
-      <workItem from="1608250460123" duration="5532000" />
+      <workItem from="1608250460123" duration="13020000" />
+      <workItem from="1608274782695" duration="2121000" />
+      <workItem from="1608276983580" duration="774000" />
+      <workItem from="1608514389814" duration="5610000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="246" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608193249714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="246" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608193249714" />
-    <state x="397" y="230" key="FileChooserDialogImpl" timestamp="1608252343766">
+    <state x="21" y="103" key="CommitChangelistDialog2" timestamp="1608528750692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="397" y="230" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608252343766" />
-    <state x="310" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1608165721335">
+    <state x="21" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608528750692" />
+    <state x="570" y="326" key="FileChooserDialogImpl" timestamp="1608528607649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="310" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608165721335" />
-    <state x="154" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1608253941765">
+    <state x="570" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608528607649" />
+    <state x="7" y="176" width="916" height="716" key="SettingsEditor" timestamp="1608531087084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="154" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608253941765" />
+    <state x="7" y="176" width="916" height="716" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608531087084" />
+    <state x="137" y="252" key="Vcs.Push.Dialog.v2" timestamp="1608528867327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608528867327" />
+    <state x="310" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1608515387634">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="310" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608515387634" />
+    <state x="154" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1608517639546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="154" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608517639546" />
   </component>
 </project>

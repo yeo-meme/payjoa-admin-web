@@ -7,12 +7,14 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 // page required
-var signup = require('./routes/signup');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var adminRouter = require('./routes/admin');
+var adminRouter = require('./routes/adminboard');
 var signupRouter = require('./routes/signup');
 var failed_loginRouter = require('./routes/failedlogin');
+var paymentRouter = require('./routes/payment');
+var testboardRouter = require('./routes/testboard');
+var paymentResultRouter = require('./routes/paymentresult');
 
 var app = express();
 
@@ -60,8 +62,11 @@ app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/users', usersRouter);
-app.use('/admin', adminRouter);
+app.use('/adminboard', adminRouter);
 app.use('/failedlogin', failed_loginRouter);
+app.use('/payment', paymentRouter);
+app.use('/testboard', testboardRouter);
+app.use('/paymentresult', paymentResultRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
