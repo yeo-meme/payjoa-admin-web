@@ -7,7 +7,7 @@
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Pragma" content="no-cache">
     <link href="css/styles.css" rel="stylesheet" />
- <script type="text/javascript">
+    <script type="text/javascript">
         var pf;
 
         function init() {
@@ -19,7 +19,6 @@
             var fileName;
 
             pf = document.frmConfirm
-
 
             var UserAgent = navigator.userAgent;
 
@@ -127,30 +126,30 @@
     <br>
 
     <!--필수항목-->
-   <label> CPID : <input type="text" name="CPID" value="CTS16654" vsize="50" maxlength="50"value="" style="IME-MODE:disabled"><br>
+   <label> CPID : <input type="hidden" name="CPID" value="CTS16654" vsize="50" maxlength="50"value="" style="IME-MODE:disabled"><br>
        <label> 주문번호 : </label><input type="text" name="ORDERNO" size="50" maxlength="50"value="" style="IME-MODE:disabled"><br>
-    상품구분 : <input type="text" name="PRODUCTTYPE" size="10" maxlength="2" value="1" style="IME-MODE:disabled"><br>
-   과금유형 : <input type="text" name="BILLTYPE" size="10" maxlength="2"  value="1" style="IME-MODE:disabled"><br>
-    결제금액 : <input type="text" name="AMOUNT" size="10" maxlength="10" value="1000" style="IME-MODE:disabled" onkeypress="fnNumCheck();"><br>
-        상품명 : <input type="text" name="PRODUCTNAME" size="50" value="게임머니"><br>
+    상품구분 : <input type="hidden" name="PRODUCTTYPE" size="10" maxlength="2" value="2" style="IME-MODE:disabled"><br>
+   과금유형 : <input type="hidden" name="BILLTYPE" size="10" maxlength="2"  value="1" style="IME-MODE:disabled"><br>
+    결제금액 : <input type="hidden" name="AMOUNT" size="10" maxlength="10" value="1000" style="IME-MODE:disabled" onkeypress="fnNumCheck();"><br>
+        상품명 : <input type="hidden" name="PRODUCTNAME" size="50" value="게임머니"><br>
            비과세결제유무(과세 테스트 <font color='blue'>00</font>, 비과세 테스트 : <font color='red'>01</font>):<input type=text name=TAXFREECD value="00"><br><br>
 
     <!--선택항목-->
-                할부개월수 : <input type="text" name="CPQUOTA" size="20" value="0:2:3:4:5:6:7:8:9:10:11:12" style="IME-MODE:disabled">(형식 : 2:3:4:5....:12)<br>
-                    고객 E-MAIL : <input type="text" name="EMAIL" size="100" maxlength="100" value=""><br>
-                        고객아이디 : <input type="text" name="USERID" size="30" maxlength="30" value="자신의아이디를넣어주세요"><font color="red"><b>(자신의 ID를 직접 넣어주세요.)</b></font><br>
-    고객명 : <input type="text" name="USERNAME" size="50" maxlength="50" value="테스터"><br>
-    상품코드 : <input type="text" name="PRODUCTCODE" size="10" value="P0001"><br>
-    예약항목1 : <input type="text" name="RESERVEDINDEX1" size="20" value="RESERVEDATA1"><br>
-    예약항목2 : <input type="text" name="RESERVEDINDEX2" size="20" value="RESERVEDATA2"><br>
-    예약항목:<input type="text" name="RESERVEDSTRING" size="100" value="RESERVESTRING"><br>
-    RETURNURL:<input type=text name=RETURNURL value=""><br>
-    HOMEURL:<input type=text name=HOMEURL value=""><br>
-    DIRECTRESULTFLAG:<input type=text name=DIRECTRESULTFLAG value=""><br>
-    CARDLIST : <input type=text name=CARDLIST value=""><br>
-    HIDECARDLIST : <input type=text name=HIDECARDLIST value="">
-    카드사별할부개월 <input type="text" name="CARDQUOTA" value="">(예시 : CCBC-0:2:3:4:5:6^CCNH-0:2:3)<br>
-    카드사 인증창 바로 이동 <input type="text" name="SKIP_YN" value="">(Y값은 사용 / 사용시 CARDLIST에 하나의 카드사 코드만 보냄)<br>
+                할부개월수 : <input type="hidden" name="CPQUOTA" size="20" value="0:2:3:4:5:6:7:8:9:10:11:12" style="IME-MODE:disabled">(형식 : 2:3:4:5....:12)<br>
+                    고객 E-MAIL : <input type="hidden" name="EMAIL" size="100" maxlength="100" value=""><br>
+                        고객아이디 : <input type="hidden" name="USERID" size="30" maxlength="30" value="자신의아이디를넣어주세요"><font color="red"><b>(자신의 ID를 직접 넣어주세요.)</b></font><br>
+    고객명 : <input type="hidden" name="USERNAME" size="50" maxlength="50" value="테스터"><br>
+    상품코드 : <input type="hidden" name="PRODUCTCODE" size="10" value="P0001"><br>
+    예약항목1 : <input type="hidden" name="RESERVEDINDEX1" size="20" value="RESERVEDATA1"><br>
+    예약항목2 : <input type="hidden" name="RESERVEDINDEX2" size="20" value="RESERVEDATA2"><br>
+    예약항목:<input type="hidden" name="RESERVEDSTRING" size="100" value="RESERVESTRING"><br>
+    RETURNURL:<input type=hidden name=RETURNURL value=""><br>
+    HOMEURL:<input type=hidden name=HOMEURL value=""><br>
+    DIRECTRESULTFLAG:<input type=hidden name=DIRECTRESULTFLAG value=""><br>
+    CARDLIST : <input type=hidden name=CARDLIST value=""><br>
+    HIDECARDLIST : <input type=hidden name=HIDECARDLIST value="">
+    카드사별할부개월 <input type="hidden" name="CARDQUOTA" value="">(예시 : CCBC-0:2:3:4:5:6^CCNH-0:2:3)<br>
+    카드사 인증창 바로 이동 <input type="hidden" name="SKIP_YN" value="">(Y값은 사용 / 사용시 CARDLIST에 하나의 카드사 코드만 보냄)<br>
     <br><br><br>
    </label>
     <input name="btnSubmit" type="button" value="주문하기" onclick="fnSubmit()" ><br>

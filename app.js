@@ -15,7 +15,8 @@ var failed_loginRouter = require('./routes/failedlogin');
 var paymentRouter = require('./routes/payment');
 var testboardRouter = require('./routes/testboard');
 var paymentResultRouter = require('./routes/paymentresult');
-
+var androidresrRouter = require('./routes/androidtest');
+var totalpaymentRoute = require('./routes/totalpayment');
 var app = express();
 
 
@@ -58,6 +59,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
 
+
+
 //page route
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
@@ -67,6 +70,8 @@ app.use('/failedlogin', failed_loginRouter);
 app.use('/payment', paymentRouter);
 app.use('/testboard', testboardRouter);
 app.use('/paymentresult', paymentResultRouter);
+app.use('/androidtest', androidresrRouter);
+app.use('/totalpayment', totalpaymentRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

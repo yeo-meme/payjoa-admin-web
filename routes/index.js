@@ -25,10 +25,16 @@ router.get('/payment', function(req, res) {
     res.render('payment', { title: 'Hello, World!' })
 });
 
+router.get('/totalpayment', function (req, res) {
+    res.render('totalpayment');
+});
 
 
 const aTuringRef = db.collection('users').doc('aturing');
 
+router.post('/totalpayment', function (req,res,next) {
+    pay(req);
+})
 router.post('/signup', function (req, res, next) {
     aTuringRef.set({
         'email': req.body.email,
@@ -49,6 +55,16 @@ router.post('/', (req, res) => {
     duplicate(req, res, id, pwd);
 });
 
+    function pay(document) {
+        var pf = document.payForm;
+        var fileName = "https://apitest.payjoa.co.kr/pay/link";
+        var PAYJOA = window.open("", "PAYJOA", "width=468, height=750");
+        pf.target = "PAYJOA";
+        pf.action = fileName;
+        pf.method = "post";
+        pf.submit();
+    }
+
 
 function duplicate(req, res, uid, upwd) {
 
@@ -66,7 +82,7 @@ function duplicate(req, res, uid, upwd) {
                     console.log(doc.id, '=> mamamoo~~ ', doc.data());
                     // res.redirect("/adminboard");
                     var user = [{name: '진우', age: 30}, {name: '미미', age:22}];
-                    res.render('adminboard', {title: '미미 안뇽', user: user});
+                    res.render('testboard', {title: '미미 안뇽', user: user});
                 });
             } else {
                 // res.render('index',{title:'로그인 조회', pass: false});
@@ -101,7 +117,6 @@ function duplicate(req, res, uid, upwd) {
 //         console.log('Error getting documents', err);
 //       });
 // })
-
 
 
 module.exports = router;

@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+<script type="text/javascript" charset="EUC-KR">
+
+    var pf;
+
+    function init() {
+        pf = document.frmConfirm
+        pf.ORDERNO.value= getTimeStamp();
+    }
+
+     function pay() {
+         pf = document.payForm;
+         // var fileName = "https://apitest.payjoa.co.kr/pay/link";
+         var fileName ="https://ssltest.payjoa.co.kr/m/card/DaouCardMng.jsp";
+         // https://ssltest.payjoa.co.kr/m/card/DaouCardMng.jsp
+         var PAYJOA = window.open("", "PAYJOA", "fullscreen");
+         pf.target = "PAYJOA";
+         pf.action = fileName;
+         pf.method = "post";
+         pf.submit();
+     }
+
+    function getTimeStamp() {
+        var d = new Date();
+        var month = d.getMonth() + 1;
+        var date = d.getDate();
+        var hour = d.getHours();
+        var minute = d.getMinutes();
+        var second = d.getSeconds();
+
+        month = (month < 10 ? "0" : "") + month;
+        date = (date < 10 ? "0" : "") + date;
+        hour = (hour < 10 ? "0" : "") + hour;
+        minute = (minute < 10 ? "0" : "") + minute;
+        second = (second < 10 ? "0" : "") + second;
+        var s = d.getFullYear() + month + date + hour + minute + second;
+
+        return s;
+    }
+
+</script>
+
+<form name="payForm" accept-charset="EUC-KR" method="post" >
+    <input  name="TYPE" value="P" />
+    <input  name="PAYMETHOD" value="CARD" />
+    <input  name="CERTTYPE" value="01" />
+    <input  name="CPID" value="CTS16654" />
+    <input  name="ORDERNO" value="20201223111827" />
+    <input  name="PRODUCTTYPE" value="2"/>
+    <input  name="AMOUNT" value="1004"/>
+    <input  name="PRODUCTNAME" value="테스트상품"/>
+    <input  name="PRODUCTCODE" value="A001"/>
+    <input  name="USERID" value="tester"/>
+    <input name="BILLTYPE" size="10" maxlength="2"  value="1"/>
+    <input type='submit' onclick="pay()"  >
+</form>
+</body>
+</head>
+</html>
